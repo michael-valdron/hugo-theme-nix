@@ -1,8 +1,8 @@
 # Nix
 
-Nix is a simple, minimal theme for Hugo
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE.md)
 
-![Hugo Theme Nix](https://raw.githubusercontent.com/LordMathis/hugo-theme-nix/master/images/screenshot.png)
+Personal folk of the [Nix](https://github.com/LordMathis/hugo-theme-nix) Hugo theme
 
 ## Usage
 
@@ -11,7 +11,7 @@ Clone the repository to your hugo theme directory
 ```
 mkdir themes
 cd themes
-git clone https://github.com/LordMathis/hugo-theme-nix
+git clone https://github.com/michael-valdron/hugo-theme-nix
 ```
 
 ## Configuration
@@ -101,4 +101,4 @@ You can turn off disqus comments per page by adding `nocomments = true` to the f
 
 ## License
 
-Nix is licensed under the [MIT License](LICENSE.md)
+[Nix](https://github.com/LordMathis/hugo-theme-nix) is licensed under the [MIT License](https://github.com/LordMathis/hugo-theme-nix/blob/master/LICENSE.md)
