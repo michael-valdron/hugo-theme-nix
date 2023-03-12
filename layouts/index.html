@@ -8,8 +8,13 @@
 	</head>
 	<body>
 		{{ partial "header.html" . }}
+		{{ if .Site.Params.BackgroundImage }}
+		<div class="flex-wrapper backmatter" style="background-image: url('{{ .Site.Params.BackgroundImage }}');">
+		{{ else }}
 		<div class="flex-wrapper">
-			<main class="container">
+		{{ end }}
+			<div class="overlay"></div>
+			<main class="container rounded frontmatter">
 				{{ with .Site.Params.ProfilePicture }}
 				<div class="row">
 					<div class="col-sm-3 col-centered text-center">
@@ -22,6 +27,13 @@
 						<h1 id="user-name">{{ .Site.Params.Name }}</h1>
 					</div>
 				</div>
+				{{ with .Site.Params.Title }}
+				<div class="row">
+					<div class="col-xs-12 user-profile text-center">
+						<h3 id="user-title">{{.}}</h3>
+					</div>
+				</div>
+				{{ end }}
 				<div class="row">
 					<div class="col-xs-12 user-social text-center">
 					{{ partial "social.html" . }}
